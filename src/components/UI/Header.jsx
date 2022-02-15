@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Login from '../login/Login';
+import React from "react";
+import { Link } from "react-router-dom";
+import Login from "../login/Login";
 
 const Header = (props) => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -27,8 +27,8 @@ const Header = (props) => {
           </div>
           <div
             className={
-              'lg:flex flex-grow items-center' +
-              (navbarOpen ? ' flex' : ' hidden')
+              "lg:flex flex-grow items-center" +
+              (navbarOpen ? " flex" : " hidden")
             }
             id="example-navbar-danger">
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">

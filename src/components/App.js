@@ -13,10 +13,10 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" index element={<StreamList />} />
+          <Route exact path="/" element={<StreamList />} />
           <Route path="/new" element={<StreamCreate />} />
-          <Route path="/delete" element={<StreamDelete />} />
-          <Route path="/edit" element={<StreamEdit />} />
+          <Route path="/delete/:id" element={<StreamDelete />} />
+          <Route path="/edit/:id" element={<StreamEdit />} />
           <Route path="/show" element={<StreamShow />} />
         </Routes>
       </BrowserRouter>
