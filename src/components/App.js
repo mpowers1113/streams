@@ -17,7 +17,7 @@ function App() {
           <Route path="/new" element={<StreamCreate />} />
           <Route path="/delete/:id" element={<StreamDelete />} />
           <Route path="/edit/:id" element={<StreamEdit />} />
-          <Route path="/show" element={<StreamShow />} />
+          <Route path="/show/:id" element={<StreamShow />} />
         </Routes>
       </BrowserRouter>
     </>
