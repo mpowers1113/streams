@@ -34,7 +34,7 @@ const StreamForm = (props) => {
   const onSubmit = (formValues) => {
     props.onSubmit(formValues);
   };
-  console.log(props.initialValues, 'props.initialValues');
+
   return (
     <Box pl={4} mt={1}>
       <form onSubmit={props.handleSubmit(onSubmit)}>
